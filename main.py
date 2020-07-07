@@ -1,8 +1,6 @@
 # main.py executes after boot.py
 # this file for altair emulator
-#
-# - to clear corrupt filesystem -
-# uos.VfsFat.mkfs(bdev)
+#@pdbperks 2020
 #
 from time import sleep 
 from gc import collect
@@ -264,11 +262,11 @@ def run():
         if tr:
                 oled.fill_rect(0, 56, 128, 10, 0)
                 oled.text('A:',0,56)
-                oled.text(str(acc),18,56)
-                oled.text('B:',50,56)
-                oled.text(str(regB),68,56)
-                oled.text('C:',90,56)
-                oled.text(str(regC),108,56)
+                oled.text(str(acc),16,56)
+                oled.text('B:',45,56)
+                oled.text(str(regB),61,56)
+                oled.text('C:',88,56)
+                oled.text(str(regC),104,56)
                 oled.show()
                 sleep(1)
                 #oled.fill_rect(0, 56, 128, 10, 0)
