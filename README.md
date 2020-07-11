@@ -8,6 +8,11 @@ Requires SSD1306.py for i2c OLED display.
 There seem to be a range of sources for the SSD1306 driver
 I add an example in the repository.
 
+|45 Exit|46|47 Menu|
+|44 Test|40 Store|43 Trace|
+|07 Back|15 Run|09 Forward|
+
+
  <table align= left border =1, cellpadding=2, height = 380>
   <tr>
     <td>45<br>Exit</td>
