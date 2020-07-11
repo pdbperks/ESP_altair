@@ -1,11 +1,11 @@
 # ESP_altair
-8bit Altair simulator with IR remote control for ESP8266
+[8bit Altair simulator](http://dperks.co.uk/altair/) with IR remote control for ESP8266
 
-Requires IR remote routine by Peter Hinch
-https://github.com/peterhinch/micropython_ir
+Requires [IR remote routine by Peter Hinch](https://github.com/peterhinch/micropython_ir)  
+I just copy the ir_rx folder (reduced to files \_\_init\_\_.py nec.py print_error.py) to the board 
 
-Requires SSD1306.py for i2c OLED display.
-There seem to be a range of sources for the SSD1306 driver
+Requires SSD1306.py for i2c OLED display.  
+There seem to be a range of sources for the SSD1306 driver.  
 I add an example in the repository.
 
 I have used hard disc jumpers to connect the OLED display and IR sensor in a neat row along the GPIO.
