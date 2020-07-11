@@ -8,45 +8,24 @@ Requires SSD1306.py for i2c OLED display.
 There seem to be a range of sources for the SSD1306 driver
 I add an example in the repository.
 
-|45 Exit|46|47 Menu|
-|44 Test|40 Store|43 Trace|
-|07 Back|15 Run|09 Forward|
+I have used hard disc jumpers to connect the OLED display and IR sensor in a neat row along the GPIO.
 
+|Pin|GPIO|Component|
+|---|---|---|
+|D3|0|OLED SDA|
+|D4|2|OLED SCL|
+|3V||Shared|
+|GND||Shared|
+|D5|14|IR data|
 
- <table align= left border =1, cellpadding=2, height = 380>
-  <tr>
-    <td>45<br>Exit</td>
-    <td>46</td> 
-    <td>47<br>Menu</td> 
- </tr>
-  <tr>
-    <td>44<br>Test</td>
-    <td>40<br>Store</td> 
-    <td>43<br>Trace</td>
-  </tr>
-<tr>
-    <td>07<br>Back</td>
-    <td>15<br>Run</td> 
-    <td>09<br>Forward</td>
-  </tr>
-<tr>
-    <td>16<br>0</td>
-    <td>19<br>Goto</td> 
-    <td>0D<br>Clear</td>
-  </tr>
-<tr>
-    <td>0C<br>1</td>
-    <td>18<br>2</td> 
-    <td>5E<br>3</td>
-  </tr>
-<tr>
-    <td>08<br>4</td>
-    <td>1C<br>5</td> 
-    <td>5A<br>6</td>
-  </tr>
-<tr>
-    <td>42<br>7</td>
-    <td>52<br>Load</td> 
-    <td>4A<br>Save</td>
-  </tr>
-</table>
+The Infrared codes and program controls are as follows: 
+
+ |45 Exit|46|47 Menu|
+ |---|---|---|
+ |44 Test|40 Store|43 Trace|
+ |07 Back|15 Run|09 Forward|
+ |16 0|19 Goto|0D Clear|
+ |0C 1|18 2|5E 3|
+ |084|1C 5|5A 6|
+ |42 7|52 Load|4A Save|
+
